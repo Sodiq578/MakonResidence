@@ -90,18 +90,9 @@
     border-radius: 40px;
 
     /* ANIMATSIYA UCHUN */
-    animation: zoomEffect 8s ease-in-out infinite alternate;
+   
 }
-
-/* ZOOM EFFEKT ANIMATSIYASI */
-@keyframes zoomEffect {
-    from {
-        background-size: 100%;
-    }
-    to {
-        background-size: 110%;
-    }
-}
+ 
 
 
 
