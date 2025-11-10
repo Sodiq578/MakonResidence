@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makon Residence | Foizsiz uy olish va Cobalt yutib olish imkoniyati</title>
+  
+  <!-- META SEO -->
+  <meta name="description" content="Makon Residence — boshlang‘ich to‘lovsiz, foizsiz va eng qulay shartlar bilan uy olish imkoniyati. Bepul qatnashib, Cobalt avtomobilini yutib olish imkoniyatini qo‘lga kiriting!">
+  <meta name="keywords" content="Makon Residence, uy olish, foizsiz uy, boshlang‘ich to‘lovsiz, Cobalt yutish, bepul qatnashish, makon live">
+  <meta name="author" content="Makon Residence">
+  
+  <!-- Open Graph (ixtiyoriy, ijtimoiy tarmoqlar uchun) -->
+  <meta property="og:title" content="Makon Residence — Foizsiz uy olish va Cobalt yutish imkoniyati">
+  <meta property="og:description" content="Bepul qatnashish orqali foizsiz uy olish va Cobalt avtomobilini yutib olish imkoniyatini qo‘lga kiriting!">
+  <meta property="og:image" content="./images/preview.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="header-box">
+        <img src="./images/logo.png" alt="Makon Residence logotipi" class="logo">
+        <div class="flag-box">
+          <img class="header-icon" src="./images/soat.svg" alt="soat belgisi">
+          <p>1-NOYABR | 20:30</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main>
+  <section class="hero">
+            <div class="container">
+                <img class="man" src="./images/man.png" alt="">
+                <div class="hero-box">
+
+                    <p>QANDAY QILIB BITTA UYGA TO'LAB 2-UYNI SOVG'AGA OLISH MUMKIN?</p>
+                    <button id="openModal">BEPUL QATNASHISH</button>
+                </div>
+            </div>
+        </section>
+
+    <!-- MAXSUS SOVG'A QISMI -->
+    <section>
+      <div class="container">
+        <div class="big-box">
+          <span>
+            <h2 class="big-box-title">MAXSUS SOVG‘A!</h2>
+            <p class="big-box-text">4 ta Cobalt avtomashinasidan birini yutib olish imkoniyati!</p>
+          </span>
+          <img src="./images/moshin.png" alt="Cobalt avtomashinalari Makon Residence sovg‘asi">
+        </div>
+
+        <!-- MA'LUMOT BO‘LIMI -->
+        <div class="boxes-box">
+          <div class="box-info">
+            <span class="icon-box">
+              <img src="./images/info-cion.png" alt="ma'lumot belgisi">
+            </span>
+            <p class="info-title">
+              Qanday qilib oyiga hech qanday foizlarsiz, oyiga 4,000,000 so‘m va kuniga 280 ming so‘m to‘lab uy olishingiz mumkinligini bilib oling
+            </p>
+          </div>
+
+          <div class="box-info">
+            <span class="icon-box">
+              <img src="./images/info-cion.png" alt="ma'lumot belgisi">
+            </span>
+            <p class="info-title">
+              Qanday qilib boshlang‘ich to‘lovsiz 60 oyga foizsiz eng qulay shartlar bilan uy olish mumkinligini bilib oling
+            </p>
+          </div>
+
+          <div class="box-info">
+            <span class="icon-box">
+              <img src="./images/info-cion.png" alt="ma'lumot belgisi">
+            </span>
+            <p class="info-title">
+              Va qanday qilib 5,000$ boshlang‘ich to‘lov bilan uy olib, Cobalt yutib olish imkoniyatiga ega bo‘lishingiz mumkinligini bilib oling
+            </p>
+          </div>
+        </div>
+
+        <!-- MODAL BO'LIM -->
+        <section class="makon-section">
+          <button id="openModal" class="btn">Bepul qatnashish</button>
+
+          <!-- MODAL -->
+          <div id="makon-modal" class="modal">
+            <div class="modal-content">
+              <span id="closeModal" class="close">&times;</span>
+              <h2 class="modal-title">Bepul qatnashish uchun ma’lumotlaringizni kiriting</h2>
+              <form id="makonForm">
+                <input type="text" id="name" name="name" placeholder="Ismingiz" required>
+                <input type="tel" id="phone" name="phone" placeholder="Telefon raqamingiz" required>
+                <button type="submit" class="submit-btn">Yuborish</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- SUCCESS MODAL -->
+          <div id="successModal" class="modal">
+            <div class="modal-content success">
+              <h2>Bitta qadam qoldi!</h2>
+              <p>Jonli efirda qatnashish uchun quyidagi tugmani bosib, yopiq kanalga obuna bo‘ling.</p>
+              <a href="https://t.me/+3URgcHWZZzE4Njcy" target="_blank" class="tg-btn">Telegram kanalga o‘tish</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>
