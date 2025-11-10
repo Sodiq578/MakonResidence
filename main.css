@@ -641,4 +641,35 @@
                 font-size: 20px;
                 top: 10px;
             }
-        }
+        } 
+
+        
+
+
+
+
+
+
+        
+/* TIMER */
+.timer {
+  text-align: center;
+  color: rgb(8, 8, 8);
+  margin-top: 20px;
+}
+
+.time-display {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.labels{
+    display: flex;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

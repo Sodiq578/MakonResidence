@@ -67,3 +67,59 @@ window.addEventListener('click', (e) => {
   if (e.target === formModal) formModal.style.display = 'none';
   if (e.target === successModal) successModal.style.display = 'none';
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ================= TIMER =================
+let minutes = 1;
+let seconds = 5;
+const timeDisplay = document.getElementById('time');
+
+function updateTimer() {
+    let m = minutes < 10 ? '0' + minutes : minutes;
+    let s = seconds < 10 ? '0' + seconds : seconds;
+    timeDisplay.textContent = `${m}:${s}`;
+
+    if (seconds > 0) {
+        seconds--;
+    } else {
+        if (minutes > 0) {
+            minutes--;
+            seconds = 59;
+        } else {
+            clearInterval(timerInterval);
+            alert("Vaqt tugadi!");
+        }
+    }
+}
+
+updateTimer();
+const timerInterval = setInterval(updateTimer, 1000);
