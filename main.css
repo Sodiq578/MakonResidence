@@ -41,7 +41,7 @@
 
         /* FLAG BOX */
         .flag-box {
-            background-image: url('./images/headerflag.png');
+            background-image: url('./images/flag.png');
             background-size: 100% 100%;
             background-repeat: no-repeat;
             background-position: center;
@@ -60,6 +60,8 @@
             text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
             border-radius: 6px;
             padding: 15px 10px !important;
+
+            border: none;
         }
 
         .flag-box img.header-icon {
@@ -75,19 +77,32 @@
         }
 
         /* HERO SECTION */
-        .hero {
-            position: relative;
-            min-height: 80vh;
-            background-image: url('./images/heroback.png');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: flex-end;
-            padding-bottom: 60px;
-            overflow: hidden;
-            border-radius: 40px;
+      .hero {
+    position: relative;
+    min-height: 80vh;
+    background-image: url('./images/heroback.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 60px;
+    overflow: hidden;
+    border-radius: 40px;
 
-        }
+    /* ANIMATSIYA UCHUN */
+    animation: zoomEffect 8s ease-in-out infinite alternate;
+}
+
+/* ZOOM EFFEKT ANIMATSIYASI */
+@keyframes zoomEffect {
+    from {
+        background-size: 100%;
+    }
+    to {
+        background-size: 110%;
+    }
+}
+
 
 
         .hero-box {
@@ -234,12 +249,12 @@
             }
 
             .logo {
-                height: 28px;
+                height: 32px;
             }
 
             .flag-box {
                 min-width: 72px;
-                height: 24px;
+                height: 40px;
                 padding: 4px 8px;
                 font-size: 11px;
                 letter-spacing: 0.5px;
@@ -281,7 +296,7 @@
 
             .flag-box {
                 min-width: 68px;
-                height: 22px;
+                height: 30px;
                 font-size: 10px;
                 padding: 3px 6px;
             }
@@ -312,7 +327,7 @@
             /* Vertikal markazlash */
             justify-content: center;
             /* Gorizontal markazlash */
-            width: 347px;
+            width: 100%;
             height: 84px;
             border-radius: 10px;
             border: 2px solid;
@@ -571,3 +586,12 @@
 .modal-titlte{
     font-size: 20px;
 }
+
+
+
+
+.hero-text{
+    font-size: 24px !important;
+}
+
+
