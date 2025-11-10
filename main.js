@@ -77,27 +77,6 @@ window.addEventListener('click', (e) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // ================= TIMER =================
 let minutes = 1;
 let seconds = 5;
