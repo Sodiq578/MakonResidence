@@ -3,17 +3,24 @@ const CHAT_ID   = '-4935605017';
 
 // Elementlar
 const openModal = document.getElementById('openModal');
+const openModal2 = document.getElementById('openModal2'); // ikkinchi tugma
 const formModal = document.getElementById('makon-modal');
 const closeModal = document.getElementById('closeModal');
 const makonForm = document.getElementById('makonForm');
 const successModal = document.getElementById('successModal');
 
-// Modal ochish
+// Modalni ochish
 openModal.addEventListener('click', () => {
   formModal.style.display = 'flex';
 });
 
-// Yopish
+if(openModal2) {
+  openModal2.addEventListener('click', () => {
+    formModal.style.display = 'flex';
+  });
+}
+
+// Modalni yopish
 closeModal.addEventListener('click', () => {
   formModal.style.display = 'none';
 });
@@ -30,7 +37,6 @@ makonForm.addEventListener('submit', async (e) => {
     return;
   }
 
-  // 🔥 Xabar matni
   const message = `📝 Yangi so‘rov:
 👤 Ism: ${name}
 📞 Telefon: ${phone}
@@ -47,6 +53,7 @@ makonForm.addEventListener('submit', async (e) => {
       })
     });
 
+    // Modalni yopish va muvaffaqiyat modali ochish
     formModal.style.display = 'none';
     successModal.style.display = 'flex';
   } catch (error) {
